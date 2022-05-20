@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="index.js"></script>
 </head>
+
 <body>
-    
+
+    <div id="left">
+        <div id="cords">
+            <h2>Координаты полей:</h2>
+            <div id="fields">
+
+            </div>
+            <select name="fieldOption" id="fieldOptionSelect">
+                <option value="1">Нарисовать поле</option>
+                <option value="2">Вставить прямоугольное</option>
+            </select>
+            <button id="fieldBut" class="but">add field</button>
+            <button id="export" class="but">generate json</button>
+            <textarea readonly name="" id="exportedjson"></textarea>
+            <button id="downloadjson" class="but">download json</button>
+        </div>
+
+
+
+    </div>
+
+    <div id="right">
+        <div id="map"></div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"
+        defer></script>
 </body>
+
 </html>
